@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Api</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <br>
+
+  <ion-grid>
+    <ion-row>
+
+        <ion-card *ngFor="let poke of listPokemon"  class="tarjeta" color="primary">
+          <ion-card class="fondo-carta">
+            <ion-grid>
+              <ion-row>
+                <ion-col><ion-card-title class="name">{{poke.id}}</ion-card-title></ion-col>
+                <ion-col><ion-card-title class="name">{{poke.name}}</ion-card-title></ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card>
+          <ion-card class="fondo-carta">
+            <img  [src]="poke.sprites.front_default" alt="" class="imag" />
+          </ion-card>
+        </ion-card>
+
+    </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>

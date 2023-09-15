@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <br>
+
+  <br>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="tarjeta" color="primary" [routerLink]="['/registro']">
+          <ion-card class="fondo-titulo"><ion-card-title>Registro</ion-card-title></ion-card>
+            <ion-card class="img" class="fondo-carta" >
+              <ion-icon name="reader-outline" class="icono" color="primary"></ion-icon>
+          </ion-card>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card class="tarjeta" color="primary" [routerLink]="['/api']">
+          <ion-card class="fondo-titulo"><ion-card-title>Api</ion-card-title></ion-card>
+            <ion-card class="img" class="fondo-carta" >
+              <ion-icon name="list-outline" class="icono" color="primary"></ion-icon>
+          </ion-card>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="tarjeta" color="primary" [routerLink]="['/fotos']">
+          <ion-card class="fondo-titulo"><ion-card-title>Camara</ion-card-title></ion-card>
+            <ion-card class="img" class="fondo-carta" >
+              <ion-icon name="camera-outline" class="icono" color="primary"></ion-icon>
+          </ion-card>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card class="tarjeta" color="primary" [routerLink]="['/music']">
+          <ion-card class="fondo-titulo"><ion-card-title>Musica</ion-card-title></ion-card>
+            <ion-card class="img" class="fondo-carta" >
+              <ion-icon name="musical-notes-outline" class="icono" color="primary"></ion-icon>
+          </ion-card>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>
+
+
+

@@ -1,0 +1,64 @@
+<ion-content>
+
+  <img src="/assets/imgsuperior.jpeg" class="img-superior">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1">
+          </ion-col>
+
+          <ion-col size="10">
+              <ion-card class="tarjeta">
+
+                <ion-card-header color="primary" class="textlogin">
+                  <ion-card-title>LOGIN</ion-card-title>
+                </ion-card-header>
+
+                <br>
+            
+                <ion-card-content>
+                  <form [formGroup]="formularioLogin" class="info">
+            
+                      <ion-input label="Usuario" label-placement="floating" fill="outline" placeholder="Ingrese el usuario" formControlName="nombre"></ion-input>
+
+                    <br>
+
+                      <ion-input label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingrese la Contraseña" formControlName="password" type="password"></ion-input>
+            
+                  </form>
+
+
+                    <ion-row>
+                      <ion-col></ion-col>
+                      <ion-col>
+                        <ion-button (click)="ingresar()">
+                          Ingresar
+                        </ion-button>
+                      </ion-col>
+                      <ion-col></ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                      <ion-col></ion-col>
+                      <ion-col>
+                        <ion-buttons>
+                          <ion-button [routerLink]="['/registro']">
+                            Registrarse
+                          </ion-button>
+                        </ion-buttons>
+                      </ion-col>
+                      <ion-col></ion-col>
+                    </ion-row>
+            
+                </ion-card-content>
+              </ion-card>
+          </ion-col>
+
+          <ion-col size="1">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <img src="/assets/imginferior.jpeg" class="img-inferior">
+
+</ion-content>

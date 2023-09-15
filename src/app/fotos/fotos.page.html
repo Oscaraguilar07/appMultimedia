@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Camara</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card color="primary">
+    <ion-card-header>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+    <ion-card>
+      <img src="{{imageSource}}">
+    </ion-card>
+    <ion-card-content>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="primary">
+    <ion-card-header>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+    <ion-card>
+      <img src="{{imageSource2}}">
+    </ion-card>
+    <ion-card-content>
+      <ion-card-subtitle></ion-card-subtitle>
+  </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom" color="primary">
+    <ion-tab-button (click)="takePicture2()" >
+      <ion-icon name="image-outline"></ion-icon>
+      galeria
+    </ion-tab-button>
+    <ion-tab-button (click)="takePicture()">
+      <ion-icon name="camera-outline"></ion-icon>
+      Camara
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
